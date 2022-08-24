@@ -1,0 +1,48 @@
+// EcuacionCuadraticaCompleta.cpp 
+
+#include "stdafx.h"
+#include "math.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std; 
+
+
+void main ()
+{
+	float a,b,c,x1,x2,d; 
+
+	cout<< "Ingresar A"<<endl;
+	cin>> a;
+	if (a!=0)
+	{	
+		cout<< "Ingresar B "<<endl;
+		cin>> b;
+		cout<< "Ingresar C "<<endl;
+		cin>> c;
+		d=(pow(b,2)-4*a*c);
+		if (d>0)
+		{
+			x1= (-b+sqrt(d))/2*a; 
+			x2= (-b-sqrt(d))/2*a;
+			cout<< "El valor de X1 es: "<<x1<<endl;
+			cout<< "El valor de X2 es: "<<x2<<endl;
+		}
+		else 
+			if (d<0)
+			{
+			x1= -b/(2*a); 
+			x2= (sqrt(-d))/(2*a);
+			cout<< "El valor de X1 es: "<<x1<<" +"<<x2<<"i"<<endl;
+			cout<< "El valor de X2 es: "<<x1<<" -"<<x2<<"i"<<endl;
+			}
+			else
+			{
+				x1= -b/2*a; 
+			cout<< "El valor de X1 es: "<<x1<<endl;
+			}
+
+			getch();
+
+	}
+}
