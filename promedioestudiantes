@@ -1,0 +1,70 @@
+// promedioestudiantes.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main(){
+	float n1, n2, n3, n4, n5, n6, n7, n8, n9, ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, nf1, nf2, nf3, may, men,promedio; 
+		cout<<"Estudiante 1"<<endl;
+		cout<<"Nota del 1er examen:";
+		cin>> ex1;
+		cout<<"Nota del 2do examen:";
+		cin>> ex2;
+		cout<<"Nota del 3er examen:";
+		cin>> ex3;
+		cout<<"Nota del parcial final:";
+		cin>> n2;
+		cout<<"Nota del proyecto final:";
+		cin>> n3;
+		cout<<"Estudiante 2"<<endl;
+		cout<<"Nota del 1er examen:";
+		cin>> ex4;
+		cout<<"Nota del 2do examen:";
+		cin>> ex5;
+		cout<<"Nota del 3er examen:";
+		cin>> ex6;
+		cout<<"Nota del parcial final:";
+		cin>> n5;
+		cout<<"Nota del proyecto final:";
+		cin>> n6;
+		cout<<"Estudiante 3"<<endl;
+		cout<<"Nota del 1er examen:";
+		cin>> ex7;
+		cout<<"Nota del 2do examen:";
+		cin>> ex8;
+		cout<<"Nota del 3er examen:";
+		cin>> ex9;
+		cout<<"Nota del parcial final:";
+		cin>> n8;
+		cout<<"Nota del proyecto final:";
+		cin>> n9;
+		n1=(ex1+ex2+ex3)/3;
+		n4=(ex4+ex5+ex6)/3;
+		n7=(ex7+ex8+ex9)/3;
+		nf1=n1+n2+n3;
+		nf2=n4+n5+n6;
+		nf3=n7+n8+n9;
+		may=nf1;
+		men=nf1;
+			if (may<nf2)
+				may=nf2;
+			if (men>nf2)
+				men=nf2;
+			if (may<nf3)
+				may=nf3;
+			if (men>nf3)
+				men=nf3;
+		promedio=(nf1+nf2+nf3)/3;
+		cout<<"La nota final del estudiante 1 es:"<<nf1<<endl;
+		cout<<"La nota final del estudiante 2 es:"<<nf2<<endl;
+		cout<<"La nota final del estudiante 3 es:"<<nf3<<endl;
+		cout<<"La nota mayor es:"<<may<<endl;
+		cout<<"La nota menor es:"<<men<<endl;
+		cout<<"El promedio de las 3 notas finales es:"<<men<<endl;
+		
+		getch();
+
+}
