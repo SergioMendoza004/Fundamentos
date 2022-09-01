@@ -1,0 +1,33 @@
+// diferenciaypromedio.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main(){
+	float c1, c2, c3, promedio, diferencia, may, men; 
+		cout<<"Escribir cantidad 1:";
+		cin>> c1;
+		cout<<"Escribir cantidad 2:";
+		cin>> c2;
+		cout<<"Escribir cantidad 3:";
+		cin>> c3;
+		may=c1;
+		men=c1;
+			if (may<c2)
+				may=c2;
+			if (men>c2)
+				men=c2;
+			if (may<c3)
+				may=c3;
+			if (men>c3)
+				men=c3;
+		diferencia=may-men;
+		promedio=(c1+c2+c3)/3;
+		cout<<"La diferencia entre el mayor y el menor es:"<<diferencia<<endl;
+		cout<<"El promedio es:"<<promedio;
+		getch();
+
+}
