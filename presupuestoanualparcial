@@ -1,0 +1,20 @@
+// presupuestoanualparcial : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	float T,G,P,PA;
+	cout<<"Ingresar el valor del Presupuesto Anual:";
+	cin>> PA;
+	T=PA*(0.3);
+	G=PA*(0.4);
+	P=PA*(0.3);
+	cout<<"El presupuesto destino a Traumatologia es:"<<T<<endl;
+	cout<<"El presupuesto destino a Ginecologia es:"<<G<<endl;
+	cout<<"El presupuesto destino a Pediatria es:"<<T;
+	getch ();
+}
