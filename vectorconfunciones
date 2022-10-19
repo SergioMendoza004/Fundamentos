@@ -1,0 +1,47 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+#define MAX 100 
+
+using namespace std;
+
+void cargar (int x[], int tam);
+void mostrar (int x[], int tam);
+float promedio (int x[], int tam);
+
+void main(){
+	int n, suma=0, multi=1, num[MAX];
+	float prom;
+	cout<<"Ingrese el numero de elementos: ";
+	cin>>n;
+	cargar(num, n);
+	mostrar(num, n);
+	//dos alternativas; mostrar directamente o asignar a una variable (prom)
+	prom=promedio(num, n);
+	cout<<"El promedio es: "<<prom;
+	getch();
+}
+
+void cargar (int x[], int n){
+	for (int i=0;i<n;i++){
+		cout<<"Ingrese el valor: ";
+		cin>> x[i];
+	}
+
+}
+
+void mostrar (int x[], int tam){
+	for (int i=0;i<tam;i++){
+		cout<<i<<" -> "<<x[i]<<endl;
+	}
+}
+
+float promedio (int x[], int n){
+	int suma=0, prome;
+	for (int i=0;i<n;i++){
+		suma+=x[i];
+		prome=suma/n;
+	}
+	return prome;
+}
